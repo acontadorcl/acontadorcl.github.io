@@ -1,0 +1,30 @@
+== LINKS ==
+
+/
+/que-hacemos-1
+/quienes-somos
+/equipo-1
+/contacto-1
+
+== DOCKER NGINX ==
+
+    docker run --rm -it -p 9000:80 -v "c:\My Web Sites\acontador:/usr/share/nginx/html" nginx
+
+== LIMPIAR ANTES DE GUARDAR ==
+
+    [...document.getElementsByTagName('*')].forEach(tag => {
+        [...tag.attributes].map( atr => atr.name ).filter( attributeName => attributeName.startsWith("ng") ).forEach( attributeName => tag.attributes.removeNamedItem(attributeName) )
+    });
+    [...document.getElementsByTagName('script')].forEach(tag => tag.parentElement.removeChild(tag));
+    [...document.getElementsByTagName('noscript')].forEach(tag => tag.parentElement.removeChild(tag));
+    [...document.querySelectorAll('.footer-credits')].forEach(tag => tag.parentElement.removeChild(tag));
+
+
+=== DOWNLOAD COMMON ==
+
+    mkdir -p fonts/wobiz
+
+    curl https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 -o fonts/fontawesome-webfont.woff2
+    curl https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0 -o fonts/fontawesome-webfont.ttf
+    curl https://s3.amazonaws.com/static.prod.wobiz.com/store/fonts/wobiz/icomoon.woff -o fonts/wobiz/icomoon.woff
+    curl https://s3.amazonaws.com/static.prod.wobiz.com/store/fonts/wobiz/icomoon.ttf -o fonts/wobiz/icomoon.ttf
